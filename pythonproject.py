@@ -87,7 +87,7 @@ class Website:
                 self.wordsDict[word] += 1
         
     def printInpWordCount(self):
-            self.inputWord = input("Enter the word to search: ")
+            self.inputWord = input("\nEnter the word to search: ")
             # re.findall(pattern,string,flags)
             findList = re.findall(self.inputWord,self.soupFilteredText,re.I)
             # find the number of times the input word present in the webpage
